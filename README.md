@@ -15,26 +15,26 @@ This is a very complicated application but I have added a ton of comments to eve
 5b. `./server/controllers/authController` which is where our user authentication actions will be for our auth endpoints.\
 5c. `./server/controllers/postController` which is where our post actions will be for reading/creating/updating/deleting posts will be.\
 6. created a db folder with the following:
-6a. `./db/init.sql` file to determine how we set up our database
-6b. `./db/user` folder to contain all of our actions for registering and updating users in our database
-6c. `./db/posts` folder to contain all of our actions for viewing/creating/updating/deleting posts in our database
+6a. `./db/init.sql` file to determine how we set up our database\
+6b. `./db/user` folder to contain all of our actions for registering and updating users in our database\
+6c. `./db/posts` folder to contain all of our actions for viewing/creating/updating/deleting posts in our database\
 7. updated our `./src/index.js` file to use redux and react-router-dom in our project
 8. added a `./src/routes.js` file to render our routes
 9. added a `./src/redux` folder to contain our redux logic (includes 2 reducers and a store)
 10. added a `./src/Components` folder to contain all of our components
-10a. added `./src/Components/Header.js` Component for our Header component at the top of ever page
-10b. added `./src/Components/Login.js` Component for our Login page
-10c. added `./src/Components/Posts.js` Component to display all the posts
-10d. added `./src/Components/AddPost.js` Component where we can add a post to the database
-10e. added `./src/Components/Post.js` Component that is rendered inside of our Posts component for each post in the posts array
+10a. added `./src/Components/Header.js` Component for our Header component at the top of ever page\
+10b. added `./src/Components/Login.js` Component for our Login page\
+10c. added `./src/Components/Posts.js` Component to display all the posts\
+10d. added `./src/Components/AddPost.js` Component where we can add a post to the database\
+10e. added `./src/Components/Post.js` Component that is rendered inside of our Posts component for each post in the posts array\
 
 
 ### FIRST STEPS TO GET STARTED
 1. Create a .env file inside the main folder with the following
-1a. CONNECTION_STRING with the value of your database connection string
-1b. SERVER_PORT with the number 3333 (this can be any number you want but I have already set up our proxy in package.json to point at port 3333)
-1c. SESSION_SECRET which can be anything you choose
-NOTE THERE IS A .envExample FILE YOU CAN LOOK AT FOR REFERENCE, THE CONNECTION STRING HERE IS INVALID YOU WILL NEED TO USE YOUR OWN TO CONNECT TO A DATABASE. THE CONNECTION STRING IN THIS FILE IS JUST TO SHOW WHAT A CONNECTION STRING WOULD LOOK LIKE
+1a. CONNECTION_STRING with the value of your database connection string\
+1b. SERVER_PORT with the number 3333 (this can be any number you want but I have already set up our proxy in package.json to point at port 3333)\
+1c. SESSION_SECRET which can be anything you choose\
+NOTE THERE IS A .envExample FILE YOU CAN LOOK AT FOR REFERENCE, THE CONNECTION STRING HERE IS INVALID YOU WILL NEED TO USE YOUR OWN TO CONNECT TO A DATABASE. THE CONNECTION STRING IN THIS FILE IS JUST TO SHOW WHAT A CONNECTION STRING WOULD LOOK LIKE\
 2. Look at the ./server/index.js file to get acquainted with how our server will be structured.
 3. look at ./db/init.sql to be sure you are acquainted with how our database is structured. Make sure to read the comments in this file and follow the commented out instructions to set up our database.
 4. READ ALL THE COMMENTS IN EACH FILE AS WE GO
