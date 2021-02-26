@@ -1,0 +1,3 @@
+SESSION_SECRET=awekflawekjlhfaljwhkef
+SERVER_PORT=3333
+CONNECTION_STRING=postgres://*****.compute-1.amazonaws.com:****/*****
