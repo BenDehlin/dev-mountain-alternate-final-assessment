@@ -1,16 +1,19 @@
+### IMPORT NOTE BEFORE STARTING
+This is a very complicated application but I have added a ton of comments to every single file in the application. There is a reasonable chance that as you're going certain parts will not make complete sense to you right away. If you find this is the case go back and re-read previous files we work on as you go. Note that I have broken this up into many sections. We will focus on the server and database first, then redux boilerplate, we will briefly touch on react-router-dom, and then we will deep dive into each component in the application. This application is not fully functional and the expecation will be that you make it fully functional by the end. There should be instructions on every file as we go that should explain what the next steps are for finishing the app. if you get stuck reach out to me or another member of staff to help you continue. 
+
 ### STEPS I HAVE DONE FOR YOU
 ## Review these files before starting the project
 1. added .env file to .gitignore and a .envExample file to demonstrate how to set up a .env
 2. included all our dependencies in our package.json so you don't have to manually install each of them. these dependencies were:
-2a. SERVER DEPENDENCIES: express, express-session, massive, dotenv, bcrypt
-2b. FRONTEND DEPENDENCIES: redux, react-redux, axios, react-router-dom
-2c. Note that you will need to run `npm install` for these to work but you won't need to install them each individually.
+2a. SERVER DEPENDENCIES: express, express-session, massive, dotenv, bcrypt\
+2b. FRONTEND DEPENDENCIES: redux, react-redux, axios, react-router-dom\
+2c. Note that you will need to run `npm install` for these to work but you won't need to install them each individually.\
 3. added "main" to our package.json so that running nodemon in a terminal will start our `./server/index.js` file
 4. added proxy to our package.json so that our frontend axios calls will be redirected to our server on port 3333
 5. created our server files in the server folder. This includes:
-5a. `./server/index.js` which is where the heart of our server is
-5b. `./server/controllers/authController` which is where our user authentication actions will be for our auth endpoints.
-5c. `./server/controllers/postController` which is where our post actions will be for reading/creating/updating/deleting posts will be.
+5a. `./server/index.js` which is where the heart of our server is\
+5b. `./server/controllers/authController` which is where our user authentication actions will be for our auth endpoints.\
+5c. `./server/controllers/postController` which is where our post actions will be for reading/creating/updating/deleting posts will be.\
 6. created a db folder with the following:
 6a. `./db/init.sql` file to determine how we set up our database
 6b. `./db/user` folder to contain all of our actions for registering and updating users in our database
